@@ -4,7 +4,7 @@ public class EMov implements  IInstruction {
 
     @Override
     public String generate() {
-        return String.format("MOV R%s %s", Fuzzer.randReg(), Fuzzer.randValExtrema());
+        return String.format("MOV R%s %s", Fuzzer.randReg(), Fuzzer.randVal());
     }
 
 }
